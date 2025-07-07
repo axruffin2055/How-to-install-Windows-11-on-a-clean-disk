@@ -1,0 +1,96 @@
+Quote for the mind:  
+Pray as though everything depended on God. Work as though everything depended on you.  
+Saint Augustine
+
+Just a note: Installing Ubuntu on a USB drive will be install on RAM and not on a disk.
+What this mean is that Ubuntu will install Live and everytime
+you reboot the USB, the USB will reset everything downloaded, saved,
+configured, etc. If you want Ubuntu on the USB drive that is persistent
+or saves everything. I have steps the do that as well.
+
+Prerequisite:
+1 8GB USB, 1 16GB USB   (I recommend 2 32GB USB)
+Any operationg system     (I used Windows 11)
+Ubuntu ISO (from ubuntu.com/download)
+Ventoy, 
+
+Description:
+Installing Ubuntu on a USB drive is a great way to create a portable Linux system.  
+You can use it for live testing, troubleshooting, or as a full Linux OS that runs   
+off the USB with saved files and settings. 
+
+Persistent: A full install that acts like a real OS and will saves your changes
+Live: A read-only environment that will not save data after reboot.
+
+Another note: How to Check Disks During Installation.
+On the Installation setup screen (after selecting "Something else"):
+Use the device name such as /dev/sda, or /dev/sdb, to identify which disk is which
+
+To verify disks:   (While installation setup)
+Open a terminal by pressing Ctrl + Alt + T
+
+Look at sizes such as 16GB, or 512GB then check to know which is your USB  
+and which is your internal drive.
+View all disks and partitions by size and mount point
+lsblk
+
+This gives detailed info about each disk's partitions and filesystem
+sudo fdisk -l
+
+!!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
+
+How to Install Ubuntu on a USB Drive 
+Download Ubuntu ISO
+Go to: https://ubuntu.com/download
+Download the latest .iso file
+
+Install Ubuntu Live USB.
+Create a Bootable Installer USB (From Linux or Windows):
+Download Ventoy from https://ventoy.net
+Extract and install Ventoy to a USB:    (Use the smaller USB)
+sudo ./Ventoy2Disk.sh -i /dev/sdX  # Replace sdX with your USB device
+Copy the Ubuntu ISO to the Ventoy USB   (drag and drop)
+Boot from USB and select the ISO
+
+Or
+
+Use Rufus (From Windows)
+Insert USB
+Download Rufus from http://rufus.ie/en/
+Open Rufus
+Select Ubuntu ISO
+Partition scheme: GPT
+File system: FAT32
+Check "Persistent storage" if you want to save files (choose size)
+Click "Start"
+
+Install Ubuntu Persistent USB.
+Create a Bootable Installer USB (From Linux or Windows):
+Download Ventoy from https://ventoy.net
+Extract and install Ventoy to a USB:    (Use the smaller USB)
+sudo ./Ventoy2Disk.sh -i /dev/sdX  # Replace sdX with your USB device
+Insert both USBs: (The bigger USB. This is where Ubuntu will be installed)
+Boot from USB and Install Ubuntu to Another USB (for full install)
+
+If you want Ubuntu fully installed on a second USB:
+At the Ubuntu welcome screen, click Install Ubuntu
+When asked about installation type: Select "Something else" 
+Choose the second USB device (/dev/sbx) 
+Create partitions: Root (/) and /home
+Set file system type: ext4
+Set mount point /
+Install bootloader to the same USB device.
+Proceed with installation
+After Installation
+Reboot and select the new Ubuntu USB in the BIOS boot menu
+Enjoy a portable Linux system with full persistence
+
+Troubleshooting Tips:
+If Ubuntu doesn't boot, check BIOS boot mode: 
+reboot computer and hold down Delete, F12, etc. and go to Boot menue to look and see 
+if boot mode is set UEFI (gpt partition) or Legacy (mbr partition) because  
+if boot mode is UEFI in the BIOS then during Ubuntu OS installation the partition needs to be gpt. 
+And if boot mode is Legacy in the BIOS then during Ubuntu OS installation the partition needs to be mbr.
+Once Unbuntu OS is installed and if files aren't saving, you may be using a live USB 
+instead of a persistent or fully installed Ubuntu on USB.
+Also, do not forget to use lsblk or gparted to confirm which drive is which during setup.
