@@ -90,7 +90,7 @@ Create or select partition for Windows (300 GB or more for C: drive)
 Proceed with installation. Your PC will reboot several times.
 
 
-Congratulations 🎉
+Congratulations 
 You’ve successfully installed Windows 11 on a clean disk.
 You can now install drivers, apps, and updates
 Set up your user account
@@ -112,6 +112,19 @@ Use Intel/AMD/NVIDIA sites for chipset, Wi-Fi, or graphics
 Copy to USB and install manually in Windows 11 device manager: 
 Windows + x then find device manager
 Find Network adapter then Wifi then right click then update.
+
+or
+
+Note before taking this step:
+Replace X:\path\to\driver.inf with the actual path to the driver.inf 
+file you saved and extracted to the USB.
+Example: pnputil /add-driver D:\drivers\intelwifi\Netwtw06.inf /install
+
+Manually Install Driver via Command Line:
+Copy the driver folder (with .inf file) to your USB.
+Press Shift + F10 to open Command Prompt during setup or in Windows.
+Type: pnputil /add-driver X:\path\to\driver.inf /install
+This installs the driver manually so the hardware or your motherboard can be detected.
 
 And remember...
 Take your time, back up, and be patient because you are building tech confidence with every step!
