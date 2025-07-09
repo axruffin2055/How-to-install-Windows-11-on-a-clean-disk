@@ -33,7 +33,7 @@ Features
 
 
 Problem it Solves
-- Removes preinstalled orignal equipment manufacturer (OEM) systems or malware \n(Non-OEM helps with system upgrade cost and flexibility)
+- Removes preinstalled orignal equipment manufacturer (OEM) systems or malware \n (Non-OEM helps with system upgrade cost and flexibility)
 - Prepares a PC for dual boot with Linux
 - Recovers a PC after OS corruption
 
