@@ -3,16 +3,16 @@ Pray as though everything depended on God. Work as though everything depended on
 Saint Augustine
 
 Just a note: Installing Ubuntu on a USB drive will be install on RAM and not on a disk.
-What this mean is that Ubuntu will install Live and everytime
-you reboot the USB, the USB will reset everything downloaded, saved,
+What this means is that Ubuntu will install Live and everytime
+you reboot Ubuntu OS from the USB, the USB will reset everything downloaded, saved,
 configured, etc. If you want Ubuntu on the USB drive that is persistent
 or saves everything. I have steps the do that as well.
 
 Prerequisite:
 1 8GB USB, 1 16GB USB   (I recommend 2 32GB USB)
-Any operationg system     (I used Windows 11)
+Any operating system     (I used Windows 11)
 Ubuntu ISO (from ubuntu.com/download)
-Ventoy, 
+Ventoy
 
 Description:
 Installing Ubuntu on a USB drive is a great way to create a portable Linux system.  
@@ -22,20 +22,20 @@ off the USB with saved files and settings.
 Persistent: A full install that acts like a real OS and will saves your changes
 Live: A read-only environment that will not save data after reboot.
 
-Another note: How to Check Disks During Installation.
-On the Installation setup screen (after selecting "Something else"):
+Another note: This is for when you start installing Ubuntu on USB.  
+How to check disks during installation.
+On the Installation Setup screen after selecting "Something else":
 Use the device name such as /dev/sda, or /dev/sdb, to identify which disk is which
-
 To verify disks:   (While installation setup)
 Open a terminal by pressing Ctrl + Alt + T
-
-Look at sizes such as 16GB, or 512GB then check to know which is your USB  
-and which is your internal drive.
 View all disks and partitions by size and mount point
 lsblk
-
 This gives detailed info about each disk's partitions and filesystem
 sudo fdisk -l
+Look at sizes such as 16GB, or 512GB then check to know which is your USB  
+and which is your internal drive.
+
+
 
 !!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
 
