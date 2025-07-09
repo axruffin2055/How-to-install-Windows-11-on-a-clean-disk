@@ -34,9 +34,6 @@ This gives detailed info about each disk's partitions and filesystem
 sudo fdisk -l
 Look at sizes such as 16GB, or 512GB then check to know which is your USB  
 and which is your internal drive.
-
-
-
 !!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
 
 How to Install Ubuntu on a USB Drive 
