@@ -26,7 +26,7 @@ Another note: This is for when you start installing Ubuntu on USB.
 How to check disks during installation.
 On the Installation Setup screen after selecting "Something else":
 Use the device name such as /dev/sda, or /dev/sdb, to identify which disk is which
-To verify disks:   (While installation setup)
+To verify disks:   (During Installation Setup)
 Open a terminal by pressing Ctrl + Alt + T
 View all disks and partitions by size and mount point
 lsblk
