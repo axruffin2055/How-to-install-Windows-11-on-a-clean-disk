@@ -1,4 +1,8 @@
-# How-to-install-Windows-11-on-a-clean-disk.
+Quote for the mind:  
+Life is like riding a bicycle. To keep your balance, you must keep moving.  
+Albert Einstein  
+
+# How-to-install-Windows-11-on-a-clean-disk.  
 
 Introduction  
 Guys and gals, before we get into this, I highly recommend installing a Linux Operating System (OS) on a USB.  
