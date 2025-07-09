@@ -13,6 +13,7 @@ download software, or fix the problems using another OS with internet. It is bet
 if by change while working on this project Windows 11 will not boot up. Also, please do not panic because I got you covered:  
 https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Install%20Ubuntu  
 This link will help with installing Ubuntu on a USB. Now on to this project.  
+
 Installing Windows 11 on a clean disk is useful when starting fresh, wiping out preinstalled bloatware,  
 dual-booting with Linux, or recovering from severe system issues. A clean install ensures no leftover system  
 clutter or malware and gives you complete control over disk partitioning. For instance, the need to gain more  
