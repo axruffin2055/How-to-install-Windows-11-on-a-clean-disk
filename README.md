@@ -1,9 +1,18 @@
 # How-to-install-Windows-11-on-a-clean-disk.
 
 Introduction
+Guys and gals, before we get into this, I highly recommend installing a Linux Operating System (OS)  
+on a USB. Why install another OS on an USB, when you already have an OS? Because if you embark on this 
+quest: "How-to-install-Windows-11-on-a-clean-disk." and things do not go as planned such as technology decides
+that it does not want to configurate software or hardware for whatever reasons then you may need to download  
+software, or fix the problems using another OS with internet. It is better to have an OS backup if by change 
+Windows 11 will not boot up. Also, please do not panic because I got you covered: https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Install%20Ubuntu
+This link will help with installing Ubuntu on a USB. Now on to this project.  
 Installing Windows 11 on a clean disk is useful when starting fresh, wiping out preinstalled bloatware, 
 dual-booting with Linux, or recovering from severe system issues. A clean install ensures no leftover system 
-clutter or malware and gives you complete control over disk partitioning.
+clutter or malware and gives you complete control over disk partitioning. For instance, the need to gain more 
+disk space for the Linux OS on Windows 11 disk was reason enough to wipe the disk and gain better control  
+toward the dual-booting quest. 
 
 Description
 This guide walks you through creating a bootable Windows 11 installer, wiping a drive safely, installing Windows 11, 
