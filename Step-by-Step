@@ -16,7 +16,7 @@ You can wipe the disk using any of these methods.
 Ways to Wipe Your Windows Disk Drive:
 During Windows Installation setup on the "Where do you want to install Windows?" screen, 
 select the disk and delete all partitions that are from Windows 11's disk.
-Select "Unallocated Space" to install Windows clean
+Select "Unallocated Space" to install Windows clean, easy, and done.
 
 Or
  
@@ -28,7 +28,9 @@ Using wipefs to clear all filesystem signatures:
 The -a flag removes all identifiable filesystem signatures (like NTFS, ext4, etc.)
 sudo wipefs -a /dev/sdX   (Replace /dev/sdX with your target disk such as /dev/sda, or /dev/nvme0n1)
 
-the parted way.
+Or
+
+The parted way.
 Using parted to remove all partitions and reinitialize disk:
 sudo parted /dev/sdX
 mklabel gpt       (Now inside the parted prompt choose only one: gpt or mbr)
@@ -36,7 +38,7 @@ quit
 
 Or
 
-During Windows 11 installation setup:
+During Windows 11 installation setup: 
 Press Shift+F10 to open CMD
 Using Command Line:
 diskpart
@@ -53,7 +55,7 @@ Download a USB Installer Tool
 Choose one of the following tools to create a bootable USB:
 
 Rufus (For Windows users)
-Insert USB (8GB+)  
+Insert USB (8GB or more)  
 Download from: https://rufus.ie
 Open Rufus
 Select: Windows 11<VERSION>.iso
@@ -86,7 +88,7 @@ Select Custom Installation
 Delete existing partitions      (Remember this is one of the option for wiping the disk)
 When creating C: drive keep in mind to leave unallocated space 
 if planning to dual-boot with Linux later.
-Create or select partition for Windows (300 GB or more for C: drive)
+Create or select partition for Windows (300 GB should be more then enough for C: drive)
 Proceed with installation. Your PC will reboot several times.
 
 
@@ -113,9 +115,9 @@ Copy to USB and install manually in Windows 11 device manager:
 Windows + x then find device manager
 Find Network adapter then Wifi then right click then update.
 
-or
+OR
 
-Note before taking this step:
+Note before taking or choosing Next step.
 Replace X:\path\to\driver.inf with the actual path to the driver.inf 
 file you saved and extracted to the USB.
 Example: pnputil /add-driver D:\drivers\intelwifi\Netwtw06.inf /install
@@ -125,6 +127,19 @@ Copy the driver folder (with .inf file) to your USB.
 Press Shift + F10 to open Command Prompt during setup or in Windows.
 Type: pnputil /add-driver X:\path\to\driver.inf /install
 This installs the driver manually so the hardware or your motherboard can be detected.
+
+AND
+
+While logged into Windows 11, if you are trouble shooting, be sure to use these tools.
+Pressing: Windows + X : will opens the Power User Menu, which gives quick access to system tools. 
+
+Use the Run Commands: Windows + R
+Then type:
+services.msc	      (To open services manager: view/start/stop services)
+msinfo32	          (To open System Information: hardware, BIOS, etc.)
+devmgmt.msc	       (To open Device Manager: Driver info)
+eventvwr.msc	      (To open Event Viewer: system logs)
+
 
 And remember...
 Take your time, back up, and be patient because you are building tech confidence with every step!
