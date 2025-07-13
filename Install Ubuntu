@@ -8,36 +8,42 @@ you reboot Ubuntu OS from the USB, the USB will reset everything downloaded, sav
 configured, etc. If you want Ubuntu on the USB drive that is persistent
 or saves everything. I have steps the do that as well.
 
-Prerequisite:
-1 8GB USB, 1 16GB USB   (I recommend 2 32GB USB)
-Any operating system     (I used Windows 11)
-Ubuntu ISO (from ubuntu.com/download)
-Ventoy
+Persistent: A full install that acts like a real OS and will saves your changes
+Live: A read-only environment that will not save data after reboot.
+
+Another note:  
+This is for when you start installing Ubuntu on USB.  
+How to check disks during installation.
+On the Installation Setup screen after selecting "Something else":
+Use the device name such as /dev/sda, or /dev/sdb, to identify which disk is which
+
+To verify disks:   (During Installation Setup)
+Open a terminal by pressing Ctrl + Alt + T
+
+View all disks and partitions by size and mount point:
+lsblk
+
+This gives detailed info about each disk's partitions and filesystem:
+sudo fdisk -l
+
+Look at sizes such as 16GB, or 512GB then check to know which is your USB  
+and which is your internal drive.
+
+!!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
 
 Description:
 Installing Ubuntu on a USB drive is a great way to create a portable Linux system.  
 You can use it for live testing, troubleshooting, or as a full Linux OS that runs   
 off the USB with saved files and settings. 
 
-Persistent: A full install that acts like a real OS and will saves your changes
-Live: A read-only environment that will not save data after reboot.
+Prerequisite:
+1 8GB USB, 1 16GB USB   (I recommend 2 32GB USB)
+Any operating system     (I used Windows 11)
+Ubuntu ISO (from ubuntu.com/download)
+Ventoy
 
-Another note: This is for when you start installing Ubuntu on USB.  
-How to check disks during installation.
-On the Installation Setup screen after selecting "Something else":
-Use the device name such as /dev/sda, or /dev/sdb, to identify which disk is which
-To verify disks:   (During Installation Setup)
-Open a terminal by pressing Ctrl + Alt + T
-View all disks and partitions by size and mount point
-lsblk
-This gives detailed info about each disk's partitions and filesystem
-sudo fdisk -l
-Look at sizes such as 16GB, or 512GB then check to know which is your USB  
-and which is your internal drive.
-!!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
-
-How to Install Ubuntu on a USB Drive 
-Download Ubuntu ISO
+How to Install Ubuntu on a USB Drive.
+Download Ubuntu ISO:
 Go to: https://ubuntu.com/download
 Download the latest .iso file
 
@@ -45,11 +51,11 @@ Install Ubuntu Live USB.
 Create a Bootable Installer USB (From Linux or Windows):
 Download Ventoy from https://ventoy.net
 Extract and install Ventoy to a USB:    (Use the smaller USB)
-sudo ./Ventoy2Disk.sh -i /dev/sdX  # Replace sdX with your USB device
+sudo ./Ventoy2Disk.sh -i /dev/sdX       (Replace sdX with your USB device)
 Copy the Ubuntu ISO to the Ventoy USB   (drag and drop)
 Boot from USB and select the ISO
 
-Or
+OR
 
 Use Rufus (From Windows)
 Insert USB
@@ -61,11 +67,13 @@ File system: FAT32
 Check "Persistent storage" if you want to save files (choose size)
 Click "Start"
 
+OR
+
 Install Ubuntu Persistent USB.
 Create a Bootable Installer USB (From Linux or Windows):
 Download Ventoy from https://ventoy.net
 Extract and install Ventoy to a USB:    (Use the smaller USB)
-sudo ./Ventoy2Disk.sh -i /dev/sdX  # Replace sdX with your USB device
+sudo ./Ventoy2Disk.sh -i /dev/sdX       (Replace sdX with your USB device)
 Insert both USBs: (The bigger USB. This is where Ubuntu will be installed)
 Boot from USB and Install Ubuntu to Another USB (for full install)
 
