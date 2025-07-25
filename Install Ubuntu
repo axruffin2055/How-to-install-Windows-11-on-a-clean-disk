@@ -2,8 +2,8 @@ Quote for the mind:
 Pray as though everything depended on God. Work as though everything depended on you.  
 Saint Augustine
 
-Just a note: Installing Ubuntu on a USB drive will be install on RAM and not on a disk.
-What this means is that Ubuntu will install Live and everytime
+Just a note: Installing Ubuntu on a USB drive will be installed on RAM and not on a disk.
+What this means is that Ubuntu will install Live OS and everytime
 you reboot Ubuntu OS from the USB, the USB will reset everything downloaded, saved,
 configured, etc. If you want Ubuntu on the USB drive that is persistent
 or saves everything. I have steps the do that as well.
