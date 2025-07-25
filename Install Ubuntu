@@ -29,7 +29,7 @@ sudo fdisk -l
 Look at sizes such as 16GB, or 512GB then check to know which is your USB  
 and which is your internal drive.
 
-!!!Be very careful not to install Ubuntu to your internal hard drive if you want a portable system!!!
+!!!Be very careful not to install Ubuntu to your internal hard drive if you want Ubuntu to be a portable system!!!
 
 Description:
 Installing Ubuntu on a USB drive is a great way to create a portable Linux system.  
