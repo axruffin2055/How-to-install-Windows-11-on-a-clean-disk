@@ -11,7 +11,7 @@ Why install another OS on an USB, when you already have an OS? Because if you em
 that it does not want to configurate software or hardware for whatever reasons, then you may need to  
 download software, or fix the problems using another OS with internet. It is better to have an OS backup  
 if by change while working on this project, Windows 11 will not boot up. Also, please do not panic because I got you covered:  
-https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Install%20Ubuntu  
+[Install a portable Ubuntu OS on a USB](https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Install%20Ubuntu)  
 This link will help with installing Ubuntu on a USB. Now on to this project.  
 
 Installing Windows 11 on a clean disk is useful when starting fresh, wiping out preinstalled bloatware,  
@@ -55,4 +55,4 @@ Prerequisites
 - Familiarity with boot menus/BIOS settings
 
 Installation Steps  
-https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Step-by-Step
+[Install Windows 11 on a clean disk](https://github.com/axruffin2055/How-to-install-Windows-11-on-a-clean-disk./blob/main/Step-by-Step)
